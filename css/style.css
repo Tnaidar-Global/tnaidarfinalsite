@@ -84,4 +84,49 @@
     font-family: SegoeUI;
     src: url(/fonts/SegoiUI/Segoe-UI.woff);
 }
+
+@font-face {
+    font-family: CBlack;
+    src: url(/fonts/Catamaran/Catamaran-Black.woff);
+}
+
+@font-face {
+    font-family: CBold;
+    src: url(/fonts/Catamaran/Catamaran-Bold.woff);
+}
+
+@font-face {
+    font-family: CExtraBold;
+    src: url(/fonts/Catamaran/Catamaran-ExtraBold.woff);
+}
+
+@font-face {
+    font-family: CExtraLight;
+    src: url(/fonts/Catamaran/Catamaran-ExtraLight.woff);
+}
+
+@font-face {
+    font-family: CLight;
+    src: url(/fonts/Catamaran/Catamaran-Light.woff);
+}
+
+@font-face {
+    font-family: CMedium;
+    src: url(/fonts/Catamaran/Catamaran-Medium.woff);
+}
+
+@font-face {
+    font-family: CRegular;
+    src: url(/fonts/Catamaran/Catamaran-Regular.woff);
+}
+
+@font-face {
+    font-family: CSemiBold;
+    src: url(/fonts/Catamaran/Catamaran-SemiBold.woff);
+}
+
+@font-face {
+    font-family: CThin;
+    src: url(/fonts/Catamaran/Catamaran-Thin.woff);
+}
 /*# sourceMappingURL=style.css.map */
