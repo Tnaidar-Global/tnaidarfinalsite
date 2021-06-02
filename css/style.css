@@ -129,4 +129,12 @@
     font-family: CThin;
     src: url(/fonts/Catamaran/Catamaran-Thin.woff);
 }
+
+.site-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+  
 /*# sourceMappingURL=style.css.map */
