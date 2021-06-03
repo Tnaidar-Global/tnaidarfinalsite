@@ -93,7 +93,7 @@ body {
 .member-social-links a{
     width:30px;
     height: 30px;
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     background-color: rgba(0,0,0,0.1);
