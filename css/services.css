@@ -1,0 +1,20 @@
+.slide-row{
+    display: flex;
+    width: 3200px;
+}
+.slide-col{
+    width: 800px;
+    height: 400px;
+    position: relative;
+}
+.user-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.user-img img{
+    height: 100%;
+    border-radius: 10px;
+}
