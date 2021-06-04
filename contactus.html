@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .map {
+            position: absolute;
+            width: 50%;
+            height: 100%;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        .logo img {
+            /* image */
+            position: absolute;
+            left: 33.19%;
+            right: 33.12%;
+            top: 20.62%;
+            bottom: 22.94%;
+            width: 485px;
+            height: 485px;
+            object-fit: cover;
+        }
+
+        .details-container {
+            position: absolute;
+            transform: translateX(100%);
+            background-color: #2C4340;
+            height: 100%;
+            width:50%;
+        }
+
+        .details {
+            position: absolute;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            left: 70.97%;
+            right: 15.49%;
+            top: 40.57%;
+            bottom: 14.88%;
+            color: white;
+            margin-left: 0px;
+        }
+
+        .contact-us {
+            /* Contact Us */
+            position: absolute;
+            height: 186px;
+            top: calc(50% - 186px/2 - 308.5px);
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 100px;
+            line-height: 93px;
+            /* or 93% */
+
+            color: white;
+        }
+
+        .social-media-icons i {
+            height: 20px;
+            width: 20px;
+            color: white;
+            margin: 5px;
+        }
+
+        .details span {
+            margin-left: 30%;
+        }
+
+        .social-media-icons {
+            margin-left: 30%;
+        }
+
+        .mini-title {
+            margin-right: 30%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.6923159402004!2d79.84289991525134!3d6.92733322025755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bcfdee7764d%3A0xdf97fbb66912b0c5!2sOne%20Galle%20Face%20Mall!5e0!3m2!1sen!2slk!4v1622792549441!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="details-container"></div>
+
+    <div class="logo">
+        <img src="images/work_10.jpg" alt="">
+    </div>
+
+    <div class="details">
+        <div class="contact-us">
+            Contact Us
+        </div>
+        <br>
+        <div class="address">
+            <span class="mini-title">ADDRESS</span><br><br>
+            <span>767 Fifth Ave. <br></span>
+            <span>New York, NY 10153</span>
+        </div>
+        <br>
+        <div class="emai">
+            <span class="mini-title">EMAIL</span><br><br>
+            <span>your@email.com</span>
+        </div>
+        <br>
+        <div class="phone">
+            <span class="mini-title">PHONE</span><br><br>
+            <span>+123456789</span>
+        </div>
+        <br>
+        <div class="follow-us">
+            <span class="mini-title">FOLLOW US</span><br><br>
+            <div class="social-media-icons">
+                    <!--facebook-->
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <!--instagram-->
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <!--linkedin-->
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/9e05af2202.js" crossorigin="anonymous"></script>
+</body>
+</html>
