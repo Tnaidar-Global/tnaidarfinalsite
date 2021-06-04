@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @font-face {
+            font-family: 'LemonMilk';
+            src: url("fonts/LemonMilk/LEMONMILK-Medium.woff");
+        }
+
+        @font-face {
+            font-family: 'BB';
+            src: url("fonts/Balboa/BalboaPlus-Primary.woff");
+        }
+
         * {
             padding: 0px;
             margin: 0px;
@@ -45,7 +55,7 @@
 
         .details {
             position: absolute;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'LemonMilk';
             left: 70.97%;
             right: 15.49%;
             top: 40.57%;
@@ -59,16 +69,14 @@
             /* Contact Us */
             position: absolute;
             height: 186px;
-            top: calc(50% - 186px/2 - 308.5px);
-
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-style: normal;
             font-weight: bold;
-            font-size: 100px;
-            line-height: 93px;
+            font-size: 60px;
+            white-space: nowrap;
             /* or 93% */
 
             color: white;
+            margin-top: -100px;
         }
 
         .social-media-icons i {
@@ -88,7 +96,7 @@
         }
 
         .mini-title {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'BB';
         }
     </style>
     <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">

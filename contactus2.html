@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'LemonMilk';
+            src: url(fonts/LemonMilk/LEMONMILK-Regular.woff);
+        }
+
+        @font-face {
+            font-family: 'LemonMilk Bold';
+            src: url(fonts/LemonMilk/LEMONMILK-Bold.woff);
+        }
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'LemonMilk';
+        }
+
+        body {
+            background-color: ;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .contact-timeline {
+            font-family: 'LemonMilk Bold';
+            max-width: fit-content;
+            margin: 50px 0px;
+            border-bottom: 5px solid rgb(2, 144, 196);
+            font-size: 2em;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 2rem;
+            margin-bottom: 50px;
+        }
+
+        .grid-item {
+            position: relative;
+            background-color: rgb(29, 64, 125);
+            border-radius: 10px;
+            width: 300px;
+            height: 200px;
+            color: #fff;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .btn {
+            background-color: white;
+            text-align: center;
+            vertical-align: middle;
+            padding: 10px;
+            cursor: pointer;
+            margin: 5px;
+            border: 3px solid rgb(107, 198, 255);
+            border-radius: 25px;
+            align-self: center;
+            margin-top: 40px;
+        }
+
+        .grid-item p {
+            font-size: 1.3em;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center>
+            <div class="contact-timeline">
+                Monday-Friday 9 AM - 5 PM(GMT +5:30)
+            </div>
+        </center>
+        
+        <div class="grid-container">
+            <div class="grid-item">
+                <p>Let's have a chat</p>
+                <button class="btn">Start a Live Chat</button>
+            </div>
+            <div class="grid-item">
+                <p>Drop us a line</p>
+                <button class="btn">Submit a Request</button>
+            </div>
+            <div class="grid-item">
+                <p>Text Us</p>
+                <button class="btn">Text</button>
+            </div>
+            <div class="grid-item">
+                <p>Drop us a line</p>
+                <button class="btn">Submit a Request</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
