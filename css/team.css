@@ -11,13 +11,11 @@
 }
 
 body {
-    background-color: black;
     font-family: 'LemonMilk';
 }
 
 .heading {
     font-size: 30px;
-    color:white;
     max-width: fit-content;
     border-bottom: 1px solid #08526f;
     overflow: hidden;
@@ -30,12 +28,14 @@ body {
     width: 90%;
     margin: 0 auto;
     overflow: auto;
+    margin-top: 20px;
 }
 
 .member-img {
     height: 410px;
     width: 300px;
     object-fit: cover;
+    margin-top: 40px;
 }
 
 .grid-container {
@@ -43,6 +43,8 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 4rem;
     margin-bottom: 50px;
+    background-color: white;
+    color: black;
 }
 
 .grid-item-2 {
@@ -67,7 +69,6 @@ body {
 .detail-box-text {
     padding: 20px 20px 20px 0px;
     position: relative;
-    color: white;
     text-align: left;
 }
 
@@ -75,12 +76,15 @@ body {
     text-align: right;
 }
 
+.detail-box-text-left a i {
+    text-align: center;
+}
+
 .detail-box-text a {
     text-decoration: none;
 }
 .detail-name{
     font-size: 2rem;
-    color: white;
     font-weight: 700;
     text-align: left;
 }
@@ -110,13 +114,11 @@ body {
     transition: all ease 0.3s;
 }
 .detail-box-text .position{
-    color: white;
     margin: 0px;
     padding: 10px 0px;
     width:97%;
 }
 .detail-box-text p{
-    color: white;
     font-weight: 500;
     font-size: 0.9rem;
 }
