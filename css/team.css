@@ -25,9 +25,9 @@ body {
 }
 
 .content-container {
+    display: block;
     width: 90%;
     margin: 0 auto;
-    overflow: auto;
     margin-top: 20px;
 }
 
@@ -88,6 +88,16 @@ body {
     font-weight: 700;
     text-align: left;
 }
+.detail-box-text .position{
+    margin: 0px;
+    padding: 10px 0px;
+    width:97%;
+}
+.detail-box-text p{
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
 .member-social-links{
     display: flex;
     align-items: center;
@@ -106,21 +116,14 @@ body {
     font-size: 0.9rem;
     color: white;
     text-decoration: none;
-    margin-bottom: 0px;
+    text-align: center;
+    vertical-align: middle;
 }
+
 .member-social-links a:hover{
     color: #fff;
     background-color: #181818;
     transition: all ease 0.3s;
-}
-.detail-box-text .position{
-    margin: 0px;
-    padding: 10px 0px;
-    width:97%;
-}
-.detail-box-text p{
-    font-weight: 500;
-    font-size: 0.9rem;
 }
 
 .detail-box-text p:first-of-type { 
