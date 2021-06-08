@@ -52,14 +52,15 @@
 
       .contactus-get-in-touch-heading {
           width: fit-content;
-          margin: 10px auto;
+          margin: 0 auto;
+          margin-bottom: 10px;
           font-size: 2.5em;
       }
 
       .contactus-border-bottom {
           width: 35%;
           border-bottom: 2px solid #60d1e0;
-          margin: 10px auto 50px auto;
+          margin: 0px auto 50px auto;
       }
 
       input {
@@ -70,7 +71,7 @@
           border-color: #eee;
           font-size: 1.3em;
           padding: 5px;
-          overflow: auto;
+          overflow: visible;
       }
       
       .contactus-no-outline:focus {
@@ -99,8 +100,13 @@
         cursor: pointer;
       }
 
+      .btn:hover {
+        background-color: black;
+        color: white;
+      }
+
       .map {
-        margin-top: 100px;
+        margin-top: 50px;
       }
 
       .map iframe {
@@ -109,24 +115,25 @@
       }
 
       .social-media-icons i {
-            height: 60px;
-            width: 60px;
-            color: black;
-            margin: 5px;
-            border-radius: 50%;
-            padding: 20px;
-        }
+          height: 60px;
+          width: 60px;
+          color: black;
+          margin: 5px;
+          border-radius: 50%;
+          padding: 20px;
+      }
 
-        .social-media-icons a :hover {
-          background-color: #ddd;
-          cursor: pointer;
-          transition-delay: 50ms;
-        }
+      .social-media-icons a :hover {
+        background-color: #ddd;
+        cursor: pointer;
+        transition-delay: 50ms;
+      }
 
-        .social-media-icons {
-          width: fit-content;
-          margin: 0 auto;
-        }
+      .social-media-icons {
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
   </style>
 </head>
 
@@ -219,11 +226,16 @@
                       <input type="text" class="contactus-text-input contactus-no-outline" placeholder="Phone Number">
                   </div>
 
+                  <div class="contactus-grid-item">
+                    <input type="text" class="contactus-text-input contactus-no-outline" placeholder="Message">
+                </div>
+
+                  <div class="contactus-grid-item"></div>
                   <div class="contactus-grid-item"></div>
                   <div class="contactus-grid-item"></div>
                   <div class="contactus-grid-item"></div>
                   <div class="contactus-grid-item">
-                    <button class="btn">
+                    <button class="btn" style="margin-top: 20px;">
                       SUBMIT INFO
                     </button>
                   </div>
@@ -234,32 +246,27 @@
   </div>        
       </div>
 
-      <div class="row">
-        <div class="col-12 contact-form-contact-info">
-          <div class="row">
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="">
-              <p class="d-flex">
-                <span class="ion-ios-location icon mr-5"></span>
-                <span>34 Street Name, City Name Here, United States</span>
-              </p>
+
+    <div class="row" style="width: 90%; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 2em; font-size: 1em">
+            <div class="grid-item" data-aos="fade-up" data-aos-delay="" style="display: inline-flex; ">
+              
+                <p class="fas fa-map-marker-alt" style="margin-right: 20px; margin-top: 8px;"></p>
+                <p style="white-space: nowrap;">34 Street Name, City Name Here, Sri Lanka</p>
+             
             </div>
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-              <p class="d-flex">
-                <span class="ion-ios-telephone icon mr-5"></span>
-                <span>+1 242 4942 290</span>
-              </p>
+            <div class="grid-item" data-aos="fade-up" data-aos-delay="100" style="display: inline-flex; ">
+              
+                <p class="fas fa-phone" style="margin-right: 20px; margin-top: 8px; margin-left: 50px;"></p>
+                <p style="white-space: nowrap;">+94 714103122</p>
+              
             </div>
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-              <p class="d-flex">
-                <span class="ion-android-mail icon mr-5"></span>
-                <span>info@yourdomain.com</span>
-              </p>
+            <div class="grid-item" data-aos="fade-up" data-aos-delay="200" style="display: inline-flex; ">
+             
+                <p class="fas fa-envelope" style="margin-right: 20px; margin-top: 8px;"></p>
+                <p style="white-space: nowrap;">hey@tnaidar.com</p>
+              
             </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 
   <div class="social-media-links">
     <div class="social-media-icons">
