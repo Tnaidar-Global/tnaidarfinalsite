@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'Lemonmilk';
+            src: url('fonts/Lemonmilk/LEMONMILK-Light.otf');
+        }
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lemonmilk';
+            font-size: 1.3em;
+        }
+
+        .contactus-container {
+            width: 80%;
+            margin: 0 auto;
+            height: 1024px;
+        }
+
+        .contactus-get-in-touch-heading {
+            width: fit-content;
+            margin: 10px auto;
+            font-size: 2.5em;
+        }
+
+        .contactus-border-bottom {
+            width: 35%;
+            border-bottom: 2px solid #60d1e0;
+            margin: 10px auto 50px auto;
+        }
+
+        input {
+            border-top-style: hidden;
+            border-right-style: hidden;
+            border-left-style: hidden;
+            border-bottom-style: groove;
+            border-color: #eee;
+            font-size: 1.3em;
+            padding: 5px;
+            overflow: auto;
+        }
+        
+        .contactus-no-outline:focus {
+            outline: none;
+            border-bottom: 2px solid #08526f;
+            background-color: rgb(255, 250, 250);
+            transition-delay: 50ms;
+            transition-duration: 200ms;
+        }
+
+        .contactus-grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 4rem;
+            margin-bottom: 50px;
+            background-color: white;
+            color: black;
+        }
+
+        .contactus-grid-item-2 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="contactus-container">
+        <div class="contactus-get-in-touch-heading">
+            Get In Touch
+            <div class="contactus-border-bottom"></div>
+        </div>
+        <div class="contactus-contact-form">
+
+            <form action="GET">
+                <center>
+                <div class="contactus-grid-container">
+                    <div class="contactus-grid-item">
+                        <input type="text" name="" id="first-name" class="text-input no-outline" placeholder="First Name">
+                    </div>
+
+                    <div class="contactus-grid-item">
+                        <input type="text" name="" id="" class="text-input no-outline" placeholder="Last Name">
+                    </div>
+
+                    <div class="contactus-grid-item">
+                        <input type="text" name="" id="" rows="" class="text-input no-outline" placeholder="Email">
+                    </div>
+                    
+                    <div class="contactus-grid-item">
+                        <input type="text" class="text-input no-outline">
+                    </div>
+                </div>
+                </center>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

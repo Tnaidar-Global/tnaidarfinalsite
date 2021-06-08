@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      body {
+        background-color: #eee;
+      }
+      input {
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: groove;
+        background-color: #eee;
+      }
+      
+      .no-outline:focus {
+        outline: none;
+        border-bottom: 2px solid blue;
+        transition-delay: 100ms;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <p>Ordinary input field with box outline:</p>
+      <input type="text" placeholder="Enter Something">
+      <p>Input field without outline:</p>
+      <input type="text" class="no-outline" placeholder="Enter Something">
+    </form>
+  </body>
+</html>

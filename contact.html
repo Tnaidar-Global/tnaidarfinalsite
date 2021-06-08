@@ -28,6 +28,106 @@
 
   <link rel="stylesheet" href="css/style.css">
 
+  <style>
+      @font-face {
+          font-family: 'Lemonmilk';
+          src: url('fonts/Lemonmilk/LEMONMILK-Light.otf');
+      }
+
+      * {
+          padding: 0px;
+          margin: 0px;
+          box-sizing: border-box;
+      }
+
+      body {
+          font-family: 'Lemonmilk';
+          font-size: 1.3em;
+      }
+
+      .contactus-container {
+          width: 80%;
+          margin: 0 auto;
+      }
+
+      .contactus-get-in-touch-heading {
+          width: fit-content;
+          margin: 10px auto;
+          font-size: 2.5em;
+      }
+
+      .contactus-border-bottom {
+          width: 35%;
+          border-bottom: 2px solid #60d1e0;
+          margin: 10px auto 50px auto;
+      }
+
+      input {
+          border-top-style: hidden;
+          border-right-style: hidden;
+          border-left-style: hidden;
+          border-bottom-style: groove;
+          border-color: #eee;
+          font-size: 1.3em;
+          padding: 5px;
+          overflow: auto;
+      }
+      
+      .contactus-no-outline:focus {
+          outline: none;
+          border-bottom: 2px solid #08526f;
+          background-color: rgb(255, 250, 250);
+          transition-delay: 50ms;
+          transition-duration: 200ms;
+      }
+
+      .contactus-grid-container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 4rem;
+          background-color: white;
+          color: black;
+      }
+
+      .contactus-grid-item-2 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+      }
+
+      .btn {
+        width: fit-content;
+        cursor: pointer;
+      }
+
+      .map {
+        margin-top: 100px;
+      }
+
+      .map iframe {
+        width: 100%;
+        height: 500px;
+      }
+
+      .social-media-icons i {
+            height: 60px;
+            width: 60px;
+            color: black;
+            margin: 5px;
+            border-radius: 50%;
+            padding: 20px;
+        }
+
+        .social-media-icons a :hover {
+          background-color: #ddd;
+          cursor: pointer;
+          transition-delay: 50ms;
+        }
+
+        .social-media-icons {
+          width: fit-content;
+          margin: 0 auto;
+        }
+  </style>
 </head>
 
 <body >
@@ -93,47 +193,45 @@
   </div>
 
   <div class="section">
-    <div class="container">
-      <div class="row mb-5">
+    <div class="contactus-container">
+      <div class="contactus-get-in-touch-heading">
+          Get In Touch
+          <div class="contactus-border-bottom"></div>
+      </div>
+      <div class="contactus-contact-form">
 
-        <div class="col-12 mb-5 order-2">
-          <form action="#" method="post">
-            <div class="row">
-              <div class="col-md-6 form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" class="form-control ">
+          <form action="GET">
+              <center>
+              <div class="contactus-grid-container">
+                  <div class="contactus-grid-item">
+                      <input type="text" name="" id="first-name" class="contactus-text-input contactus-no-outline" placeholder="First Name">
+                  </div>
+
+                  <div class="contactus-grid-item">
+                      <input type="text" name="" id="" class="contactus-text-input contactus-no-outline" placeholder="Last Name">
+                  </div>
+
+                  <div class="contactus-grid-item">
+                      <input type="text" name="" id="" rows="" class="contactus-text-input contactus-no-outline" placeholder="Email">
+                  </div>
+                  
+                  <div class="contactus-grid-item">
+                      <input type="text" class="contactus-text-input contactus-no-outline" placeholder="Phone Number">
+                  </div>
+
+                  <div class="contactus-grid-item"></div>
+                  <div class="contactus-grid-item"></div>
+                  <div class="contactus-grid-item"></div>
+                  <div class="contactus-grid-item">
+                    <button class="btn">
+                      SUBMIT INFO
+                    </button>
+                  </div>
               </div>
-              <div class="col-md-6 form-group">
-                <label for="phone">Phone</label>
-                <input type="text" id="phone" class="form-control ">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 form-group">
-  
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" class="form-control ">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 form-group">
-                <label for="message">Write Message</label>
-                <textarea name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 form-group">
-                <input type="submit" value="Send Message" class="btn btn-outline-black px-3 py-3">
-              </div>
-            </div>
+              </center>
           </form>
-        </div>
-
-        
+      </div>
+  </div>        
       </div>
 
       <div class="row">
@@ -161,6 +259,21 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="social-media-links">
+    <div class="social-media-icons">
+      <!--facebook-->
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <!--instagram-->
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <!--linkedin-->
+      <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.6923159402004!2d79.84289991525134!3d6.92733322025755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bcfdee7764d%3A0xdf97fbb66912b0c5!2sOne%20Galle%20Face%20Mall!5e0!3m2!1sen!2slk!4v1622792549441!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </div>
 
   <div class="section bg-light block-11">
@@ -343,6 +456,7 @@
   <script src="js/jquery.stellar.min.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://kit.fontawesome.com/9e05af2202.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
