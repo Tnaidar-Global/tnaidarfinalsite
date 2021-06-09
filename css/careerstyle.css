@@ -140,7 +140,8 @@
 }
 
 .job-btn:hover {
-    background-color: rgba(red, green, blue, alpha);
+    background-color: #000;
+    color: white;
 }
 
 /* Works on Chrome, Edge, and Safari */
