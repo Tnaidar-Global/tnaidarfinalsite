@@ -1,7 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@font-face {
+    font-family: "LemonMilk Regular";
+    src: url("/fonts/LemonMilk/LEMONMILK-Regular.woff");
+}
 
 * {
-    font-family: 'Poppins';
+    font-family: 'LemonMilk Regular';
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -157,4 +160,8 @@
     background-color: gray;
     border-radius: 20px;
     border: 3px solid white;
+}
+
+* {
+    font-family: 'LemonMilk Regular';
 }
