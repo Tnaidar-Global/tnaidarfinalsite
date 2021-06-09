@@ -34,6 +34,11 @@
           src: url('fonts/Lemonmilk/LEMONMILK-Light.otf');
       }
 
+      @font-face {
+        font-family: 'LemonMilk Bold';
+        src: url("fonts/LemonMilk/LEMONMILK-Bold.woff");
+      }
+
       * {
           padding: 0px;
           margin: 0px;
@@ -54,7 +59,7 @@
           width: fit-content;
           margin: 0 auto;
           margin-bottom: 10px;
-          font-size: 2.5em;
+          font-size: 2em;
       }
 
       .contactus-border-bottom {
@@ -134,7 +139,28 @@
         margin: 0 auto;
         margin-top: 20px;
       }
+
+      .contactus-text-input {
+        font-size: 1em;
+      }
   </style>
+
+<style>
+  @font-face {
+    font-family: 'LemonMilk Bold';
+    src: url('fonts/LemonMilk/LEMONMILK-Bold.woff');
+  }
+  .mb-4 {
+    font-family: 'LemonMilk Bold';
+  }
+
+  .text-area {
+    margin-right: -660px;
+    border: none; 
+    border-bottom: 2px solid gray; 
+    border-bottom-style: groove;
+  }
+</style>
 </head>
 
 <body >
@@ -201,7 +227,7 @@
 
   <div class="section">
     <div class="contactus-container">
-      <div class="contactus-get-in-touch-heading">
+      <div class="contactus-get-in-touch-heading mb-4">
           Get In Touch
           <div class="contactus-border-bottom"></div>
       </div>
@@ -219,7 +245,7 @@
                   </div>
 
                   <div class="contactus-grid-item">
-                      <input type="text" name="" id="" rows="" class="contactus-text-input contactus-no-outline" placeholder="Email">
+                      <input type="text" name="" id="" class="contactus-text-input contactus-no-outline" placeholder="Email">
                   </div>
                   
                   <div class="contactus-grid-item">
@@ -227,11 +253,9 @@
                   </div>
 
                   <div class="contactus-grid-item">
-                    <input type="text" class="contactus-text-input contactus-no-outline" placeholder="Message">
-                </div>
-
-                  <div class="contactus-grid-item"></div>
-                  <div class="contactus-grid-item"></div>
+                    <textarea rows = "5" cols = "70"  class="contactus-text-input contactus-no-outline text-area" placeholder="Enter Message">
+                   </textarea><br>
+                  </div>
                   <div class="contactus-grid-item"></div>
                   <div class="contactus-grid-item"></div>
                   <div class="contactus-grid-item">
